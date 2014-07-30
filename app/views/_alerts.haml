@@ -1,0 +1,13 @@
+.row
+  .col-xs-12.col-sm-12.col-md-12.col-lg-12
+    - if env['x-rack.flash'].error
+      .alert.alert-danger.alert-dismissable
+        %button.close{type: "button", data:{dismiss: "alert"}, aria:{hidden: "true"}}
+          &times;
+        = env['x-rack.flash'].error
+
+    - if env['x-rack.flash'].notice
+      .alert.alert-success.alert-dismissable
+        %button.close{type: "button", data:{dismiss: "alert"}, aria:{hidden: "true"}}
+          &times;
+        = env['x-rack.flash'].notice

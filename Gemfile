@@ -4,15 +4,15 @@ gem 'hobbit', github: 'patriciomacadden/hobbit'
 gem 'hobbit-contrib', github: 'patriciomacadden/hobbit-contrib', require: 'hobbit/contrib'
 gem 'i18n'
 gem 'rack-protection'
-# Uncomment this if you want to use Sass
-#gem 'sass'
+gem 'rack-flash3', require: 'rack-flash'
+
 gem 'sprockets', '~> 2.12.1'
 gem 'tilt', '~> 1.3.0'
-gem 'thin'
+gem 'haml'
 
 group :development do
-  gem 'better_errors'
-  gem 'binding_of_caller'
+  #gem 'better_errors'
+  #gem 'binding_of_caller'
   gem 'rake'
 end
 
